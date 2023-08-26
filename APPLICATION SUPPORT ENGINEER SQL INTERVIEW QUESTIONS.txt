@@ -1,0 +1,56 @@
+APPLICATION SUPPORT ENGINEER SQL INTERVIEW QUESTIONS
+
+Q1. Write an SQL query to fetch "FIRST NAME" from EMPLOYEE table in upper case.
+
+   SELECT UPPER (FIRST_NAME) FROM EMPLOYEE;
+   
+   OUTPUT:RAVI
+
+Q2. Write an SQL query to fetch "FIRST NAME" from EMPLOYEE table where first or initial char should be in upper case and rest chars in lowercase.
+
+	SELECT INITCAP (FIRST_NAME) FROM EMPLOYEE;
+	
+	OUTPUT:Ravi first char upper. 
+
+Q3.
+Write an SQL query to print the FIRST_NAME from EMPLOYEE table after replacing 'a' with 'A’.
+
+	SELECT REPLACE (FIRST_NAME , 'a' , 'A') FROM EMPLOYEE;
+		
+		OUTPUT: A
+
+Q4. Write an SQL query to print details all employees with the first name as "Ravi" and "Kala" from
+EMPLOYEE table.
+
+	SELECT * FROM EMPLOYEE WHERE FIRST_NAME IN ('Ravi', 'Kala');
+	
+	OUTPUT: Ravi Kala
+
+
+Q5. Write an SQL query to print the FIRST_NAME and LAST NAME from EMPLOYEE table into a single column COMPLETE_NAME. A space char should separate them.
+
+	SELECT CONCAT (FIRST_NAME,' ',LAST_ANME) AS COMPLETE_NAME FROM EMPLOYEE;
+	
+	OUTPUT: Kala Chandra
+
+
+
+Q6. Write an SQL query to print the first three characters of FIRST_NAME from EMPLOYEE table.
+
+	SELECT SUBSTRING (FIRST_NAME, 1,3) FROM EMPLOYEE;
+	
+	OUTPUT: Kal
+
+
+Q7. Write an SQL query to print details of the EMPLOYEE whose FIRST_NAME contains 'a'.
+
+
+	SELECT * FROM EMPLOYEE WHERE FIRST_NAME LIKE '%a%';
+
+	OUTPUT: Kala 
+
+
+
+
+
+
